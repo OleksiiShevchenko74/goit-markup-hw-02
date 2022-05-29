@@ -1,3 +1,9 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -20,12 +26,29 @@
 
 /* --------СТИЛИ ДЛЯ index.html--------- */
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primary-bg-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
 }
 
 .list {
@@ -112,6 +135,7 @@ body {
 .hero-btn {
     font-family: inherit;
         font-size: 16px;
+        font-weight: 700;
         line-height: 1.88;
         display: flex;
         align-items: center;
@@ -138,6 +162,7 @@ body {
 
 .features-subtitle {
         line-height: 1.14;
+        font-size: 14px;
         text-transform: uppercase;
         color: var(--primary-text-color)
 }
